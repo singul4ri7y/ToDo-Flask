@@ -1,0 +1,117 @@
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+html {
+	font-family: sans-serif;
+	text-size-adjust: 100%;
+	line-height: 1.5 !important;
+	-ms-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: transparent;
+	user-select: none;
+}
+
+body {
+	margin: 0;
+	font-size: 1rem !important;
+	font-weight: 321;
+	color: #313233;
+	text-align: left;
+	background-color: #f7f7f7;
+}
+
+div.content {
+	width: 40%;
+	margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-weight: lighter;
+	font-size: 1.5rem;
+}
+
+hr {
+	background-color: #313233;
+	margin-bottom: 2rem;
+}
+
+table {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+table, th, td {
+	border: 1px solid;
+	border-collapse: collapse;
+}
+
+th {
+	font-weight: bold;
+	text-align: center;
+}
+
+td {
+	text-align: center;
+}
+
+fieldset {
+	border: 1px solid;
+	border-radius: 3px;
+	position: relative;
+}
+
+div.inputs {
+	margin-bottom: 10px;
+}
+
+div.inputs > input[type= "text"] {
+	width: 80%;
+	height: 30px;
+	padding: 10px;
+	
+}
+
+fieldset legend {
+	font-weight: bold;
+}
+
+fieldset input[ type= "text" ] {
+	float: right;
+}
+
+input[ type= "submit" ] {
+	float: right;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 5px;
+	color: #fff;
+	background-color: #007bff;
+	border: 1px solid #007bff;
+	font-size: 0.9rem;
+	border-radius: 3px;
+	font-weight: 400;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	padding: 0.375rem 0.75rem;
+	cursor: pointer;
+}
+
+h3 {
+	width: 100%;
+	text-align: left;
+}
+
+p {
+	text-align: justify;
+	width: 100%;
+}

@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block title %}ToDo List{% endblock %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+
+	<div class= "content">
+		<h1>ToDo List</h1>
+		<hr />
+		
+		<table>
+			
+			<tr>
+				<th>Task</th>
+				<th>Title</th>
+				<th>Date</th>
+				<th>Actions</th>
+			</tr>
+			{% for task in tasks %}
+			<tr>
+				<td>{{ task.id }}</td>
+				<td><a href= "content/{{ task.id }}">{{ task.title }}</a></td>
+				<td>{{ task.date_created.date() }}</td>
+				<td>
+					<a href= "update/{{ task.id }}">Update</a>
+					<br />
+					<a href= "delete/{{ task.id }}">Delete</a>
+				</td>
+			</tr>
+			{% endfor %}
+			
+		</table>
+		
+		<fieldset>
+			<legend>Input Task: </legend>
+			<form action= "/" method= "post">
+				<div class= "inputs">
+					<label>Title: </label>
+					<input type= "text" name= "title" class= "title" placeholder="Please enter the title..." />
+				</div>
+				<div class= "inputs">
+					<labe>Content: </labe>
+					<input type= "text" name= "content" class= "conetnt" placeholder="Please enter the content..." />
+				</div>
+				<input type= "submit" value= "Add Task" name= "submit" class= "submit" />
+			</form>
+		</fieldset>
+	</div>
+
+{% endblock %}
